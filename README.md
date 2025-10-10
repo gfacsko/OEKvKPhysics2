@@ -1,4 +1,4 @@
-My Physics II lectures at OU.
+My (KTXFI2EBNF) Physics II lectures at OU.
 
 You can find all slides, notes and books in the main branch. 
 
