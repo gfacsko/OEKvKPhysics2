@@ -2,7 +2,7 @@ My (KTXFI2EBNF) Physics II lectures at Obuda University, Kando Kalman Faculty of
 
 You can find all slides, notes and books in the main branch. 
 
-Youtube.com channel:
+YouTube.com channel of the course:
 
 https://www.youtube.com/playlist?list=PL5VzM0cemK27TzPIcgBMekypUcNU58H7L
 
