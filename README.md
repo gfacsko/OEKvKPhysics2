@@ -6,4 +6,4 @@ YouTube.com channel of the course:
 
 https://www.youtube.com/playlist?list=PL5VzM0cemK27TzPIcgBMekypUcNU58H7L
 
-Could you cite this site and refer to me if you use these materials?
+Could you please cite this site and refer to me if you use these materials?
