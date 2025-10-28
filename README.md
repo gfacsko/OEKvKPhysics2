@@ -1,4 +1,4 @@
-My (KTXFI2EBNF) Physics II lectures at Obuda University.
+My (KTXFI2EBNF) Physics II lectures at Obuda University, Kando Kalman Faculty of Electrical Engineering, Budapest, Hungary.
 
 You can find all slides, notes and books in the main branch. 
 
