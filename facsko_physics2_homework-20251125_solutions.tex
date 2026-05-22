@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{letter}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage{enumitem}
+% \usepackage{mathtools}
+\usepackage{eqnarray,amsmath}
+\usepackage[a4paper, total={7.5in, 11.25in}]{geometry}
+%\usepackage[margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\setstretch{1.2}
+
+\begin{document}
+
+\begin{center}
+(KTXFI2EBNF) Physics II. Homework No. 3 Solutions\\
+November 25, 2025
+\end{center}
+
+\begin{enumerate}
+
+\item We study an electron in a radioactive particle beam as it passes through the laboratory. It is found that, as measured in the laboratory, the average lifetime of the particle is $25\,ns$; after this time the particle decays. The average lifetime measured in the reference frame attached to the particles is $7.5\,ns$. What is the propagation velocity of the particle beam?\\
+
+The Lorentz factor is
+$$ \gamma = \frac{\Delta t}{\Delta \tau} = \frac{25}{7.5} = \frac{10}{3} \approx 3.3333333. $$
+Using $\gamma = 1/\sqrt{1 - v^2/c^2}$ we obtain
+$$ v = c\sqrt{1 - \frac{1}{\gamma^2}} = c\sqrt{1 - \left(\frac{3}{10}\right)^2} \approx 0.953939\,c. $$
+Thus the beam propagates at approximately $0.95394$ times the speed of light.
+
+\item A certain bacterium doubles its population in 25 days. Two such bacteria are placed in a spaceship and sent on an 800-day space journey. During the trip, the spaceship moves at a constant speed of $0.995\,c$. How many bacteria will be on board at the moment of return?\\
+
+The proper time experienced on board is shorter than the laboratory time. The ship frame time is
+$$ \Delta \tau = \Delta t\sqrt{1 - v^2/c^2} = 800\sqrt{1 - (0.995)^2}\ \text{days} \approx 79.89994\ \text{days}. $$
+Exponential growth with doubling time 25 days gives
+$$ N = N_0 \, 2^{\Delta \tau / 25} = 2 \cdot 2^{79.89994/25} \approx 18.33. $$
+Approximately 18 bacteria will be on board at return (the continuous model gives about 18.3 individuals).
+
+\item A particle moves with a velocity such that $\frac{v}{c} = 0.9999$. Determine the value of $\frac{m}{m_{0}}$.\\
+
+The relativistic mass factor equals the Lorentz factor
+$$ \frac{m}{m_0} = \gamma = \frac{1}{\sqrt{1 - v^2/c^2}} = \frac{1}{\sqrt{1 - (0.9999)^2}} \approx 70.712446. $$
+
+\item Determine the relativistic mass and the velocity of an electron whose kinetic energy is 1 MeV ($ 1.6 \cdot 10^{-13} \, \text{J} $). The rest mass of the electron is $9.11 \cdot 10^{-31}$ kg.\\
+
+From the relation between kinetic energy and gamma factor,
+$$ E_{kin} = (\gamma - 1)m_0 c^2, $$ 
+we obtain
+$$ \gamma = 1 + \frac{E_{kin}}{m_0 c^2} \approx 1 + \frac{1.0\cdot 10^{6}\ \text{eV}\cdot 1.6\cdot 10^{-19}\ \text{J/eV}}{(9.11\cdot 10^{-31}\,\text{kg})(299792458\,\text{m/s})^2}
+\approx 2.9541604. $$
+The relativistic mass is
+$$ m = \gamma m_0 \approx 2.9541604 \cdot 9.11\cdot 10^{-31}\ \text{kg} \approx 2.69124\cdot 10^{-30}\ \text{kg}. $$
+The speed follows from
+$$ v = c\sqrt{1 - \frac{1}{\gamma^2}} \approx 0.94096436\,c \approx 2.82094\cdot 10^{8}\ \text{m/s}. $$
+
+\item Calculate the rest energy of a proton, corresponding to its rest mass of $1.67 \cdot 10^{-27}$ kg, in joules and in electronvolts. ($1\,\text{MeV} = 1.6 \cdot 10^{-13}\text{J}$)\\
+
+The rest energy is
+$$ E = m c^2 = (1.67\cdot 10^{-27})(299792458)^2 \approx 1.50092115\cdot 10^{-10}\ \text{J}. $$
+In mega-electronvolts,
+$$ E \approx \frac{1.50092115\cdot 10^{-10}}{1.6\cdot 10^{-13}}\ \text{MeV} \approx 938.08\ \text{MeV}. $$
+
+\end{enumerate}
+
+\bigskip
+
+\rightline{Dr. Gabor FACSKO}
+\rightline{\textit{facsko.gabor@uni-obuda.hu}}
+
+\end{document}

@@ -1,0 +1,132 @@
+\documentclass[12pt]{letter}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage{enumitem}
+% \usepackage{mathtools}
+\usepackage{eqnarray,amsmath}
+\usepackage[a4paper, total={7.5in, 11.25in}]{geometry}
+
+\begin{document}
+
+Name: \hrulefill \quad Neptun code: \hrulefill
+
+\begin{center}
+ (KTXFI2EBNF) Physics II. Test 1 Solutions \\
+  December 1, 2025
+\end{center}
+
+\bigskip
+
+\begin{enumerate}
+\setcounter{enumi}{0}
+
+\item An electron has a kinetic energy of $5\ \text{eV}$. \\
+
+\begin{enumerate}
+\item What is its velocity?\\
+  
+The kinetic energy in SI units is $K = 5\cdot (1.602176634\cdot10^{-19})\ \text{J} = 8.01088317\cdot10^{-19}\ \text{J}$. Using
+$$ K=\frac{1}{2} m v^{2}, $$
+with $m=9.1\cdot10^{-31}\ \text{kg}$ gives
+$$ v=\sqrt{\frac{2K}{m}} \approx 1.3269\cdot10^{6}\ \text{m/s}. $$
+
+\item What is its momentum?\\
+
+$p=m v \approx (9.1\cdot10^{-31}\ \text{kg})\cdot(1.3269\cdot10^{6}\ \text{m/s}) \approx 1.2075\cdot10^{-24}\ \text{kg\,m/s}.$
+
+\item What is the wavelength of the associated de Broglie wave?\\
+Using $\lambda = h/p$ with $h=6.62607015\cdot10^{-34}\ \text{J\,s}$,
+$$ \lambda=\frac{h}{p}\approx 5.4876\cdot10^{-10}\ \text{m} \approx 0.549\ \text{nm}. $$
+\hfill (10 points)
+ \end{enumerate}
+
+% ------------------------------------------------------------------------------------------------------------------------------------
+
+\bigskip
+\item A metal surface is illuminated with light of wavelength $1.1\cdot10^{-7}\ \text{m}$. What is the velocity of the emitted electrons if the photoelectric effect starts at a wavelength of $2.77\cdot10^{-7}\ \text{m}$? \\
+  
+Use $E_\text{photon}=hc/\lambda$ and the kinetic energy of the emitted electron is the excess energy:
+$$ K = hc\left(\frac{1}{\lambda_\text{in}}-\frac{1}{\lambda_\text{th}}\right), $$
+with $h=6.62607015\cdot10^{-34}\ \text{J\,s}$ and $c=2.99792458\cdot10^{8}\ \text{m/s}$. Substituting $\lambda_\text{in}=1.1\cdot10^{-7}\ \text{m}$ and $\lambda_\text{th}=2.77\cdot10^{-7}\ \text{m}$ gives
+$$ K \approx 1.0887\cdot10^{-18}\ \text{J}. $$
+Then
+$$ v=\sqrt{\frac{2K}{m}} \approx 1.5469\cdot10^{6}\ \text{m/s}. $$
+($m_e=9.1\cdot10^{-31}\ \text{kg}$) \hfill (10 points)
+
+% ------------------------------------------------------------------------------------------------------------------------------------
+
+\bigskip
+\item In a Compton scattering experiment, X-rays with a wavelength of $0.1\ \text{nm}$ are used.\\
+($m_e=9.1\cdot10^{-31}\ \text{kg}$)
+\begin{enumerate}
+\item At what scattering angle does the wavelength of the radiation increase by 1\%?\\
+The Compton wavelength is $\lambda_C = h/(m_e c)\approx 2.4288\cdot10^{-12}\ \text{m}$. An increase of 1\% means $\Delta\lambda = 0.01\lambda_0 = 1.0\cdot10^{-12}\ \text{m}$. The Compton formula
+$$ \Delta\lambda=\lambda_C(1-\cos\theta) $$  
+gives
+$$ 1-\cos\theta=\frac{\Delta\lambda}{\lambda_C}\approx 0.41172,$$
+therefore
+$$\theta=\arccos(1-0.41172)\approx 53.97^\circ. $$
+
+\item At what angle does the wavelength become 0.01\% larger?\\
+Now $\Delta\lambda=0.0001\lambda_0=1.0\cdot10^{-14}\ \text{m}$, hence
+$$ 1-\cos\theta=\frac{\Delta\lambda}{\lambda_C}\approx 0.004117,
+$$
+and
+$$\theta=\arccos(1-0.004117)\approx 5.20^\circ. $$
+\hfill (10 points)
+\end{enumerate}
+
+% ------------------------------------------------------------------------------------------------------------------------------------
+
+\bigskip
+\item A light source has a power output of $100\ \text{W}$.
+
+\begin{enumerate}
+\item What is the frequency of the light if the entire energy of the source is emitted as light with wavelength $\lambda=400\ \text{nm}$?\\
+$$ f=\frac{c}{\lambda}=\frac{2.99792458\cdot10^{8}}{400\cdot10^{-9}}\ \text{Hz}\approx 7.4948\cdot10^{14}\ \text{Hz}. $$
+
+\item  How many photons are emitted by the light source per second?\\
+Each photon has energy $E=hf$, therefore the photon emission rate is
+$$ \dot{N}=\frac{P}{hf}=\frac{P\lambda}{hc}.$$
+With $P=100\ \text{W}$ and $\lambda=400\cdot10^{-9}\ \text{m}$,
+$$ \dot{N}\approx 2.0136\cdot10^{20}\ \text{photons/s}. $$
+\hfill (10 points)
+\end{enumerate}
+
+% ------------------------------------------------------------------------------------------------------------------------------------
+
+\bigskip
+\item We study a positron in a radioactive particle beam as it passes through the laboratory. It is found that, as measured in the laboratory, the average lifetime of the particle is $50\ \text{ns}$. The average lifetime measured in the particle rest frame is $7.5\ \text{ns}$. What is the propagation velocity of the particle beam? Determine the value of $\dfrac{m}{m_0}$ for the electron. Calculate the rest energy of a positron corresponding to its rest mass $m_p=9.1\cdot10^{-31}\ \text{kg}$ in joules and in electronvolts. \\
+
+Time dilation gives $\tau=\gamma\tau_0$, hence
+$$ \gamma=\frac{\tau}{\tau_0}=\frac{50\ \text{ns}}{7.5\ \text{ns}}=\frac{50}{7.5}=6.\overline{6}. $$
+Therefore
+$$ \beta=\frac{v}{c}=\sqrt{1-\frac{1}{\gamma^{2}}}\approx 0.98869, $$
+and
+$$ v\approx 0.98869\,c \approx 2.9640\cdot10^{8}\ \text{m/s}. $$
+The relativistic mass factor is
+$$\frac{m}{m_0}=\gamma\approx 6.6667. $$
+The rest energy of the positron is
+$$ E_{0}=m_p c^{2}\approx (9.1\cdot10^{-31}\ \text{kg})\cdot(2.99792458\cdot10^{8}\ \text{m/s})^{2} \approx 8.1787\cdot10^{-14}\ \text{J}. $$
+In electronvolts,
+$$ E_{0} \approx \frac{8.1787\cdot10^{-14}\ \text{J}}{1.602176634\cdot10^{-19}\ \text{J/eV}}
+\approx 5.1047\cdot10^{5}\ \text{eV}\approx 510.5\ \text{keV}\approx 0.511\ \text{MeV}.$$
+(Using $1\ \text{MeV}\approx 1.6\cdot10^{-13}\ \text{J}$ gives $E_0\approx 0.511\ \text{MeV}$.) \hfill (10 points)
+
+\end{enumerate}
+
+% ------------------------------------------------------------------------------------------------------------------------------------
+
+Requirements for obtaining a signature: achieving at least 40\% (20\,points) on the midterm exam.
+
+Grades: 0–25 points: Fail (1), 26–30 points: Pass (2), 31–37 points: Satisfactory (3), 38–45 points: Good (4), 46–50 points: Excellent (5).
+
+\rightline{Dr.~Gabor FACSK\'O}
+\rightline{\textit{facsko.gabor@uni-obuda.hu}}
+
+
+\end{document}

@@ -1,0 +1,104 @@
+\documentclass[a4paper,12pt]{letter}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage{enumitem}
+% \usepackage{mathtools}
+\usepackage{eqnarray,amsmath,siunitx}
+\usepackage[a4paper, total={7.5in, 11.25in}]{geometry}
+%\usepackage[margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+\setstretch{1.2}
+
+\begin{document}
+
+\begin{center}
+(KTXFI2EBNF) Physics II.  Homework Solutions\\ \smallskip
+November~13,~2025
+ \end{center}
+
+ \textbf{Constants used}
+
+ 
+\begin{eqnarray*}
+h &=& 6.62607015\cdot10^{-34}\ \mathrm{J\cdot s}\\
+c &=& 2.99792458\cdot10^{8}\ \mathrm{m/s}\\
+e &=& 1.602176634\cdot10^{-19}\ \mathrm{C}\\
+m_e &=& 9.11\cdot10^{-31}\ \mathrm{kg}
+\end{eqnarray*}
+
+\textbf{Problems and solutions}
+
+\begin{enumerate}
+\item  A light source has a power output of $\,50\,\mathrm{W}.$
+
+\begin{enumerate}
+\item What is the frequency of the light if the entire energy of the source is emitted as light of wavelength $\lambda=500\ \mathrm{nm}$?\\
+
+ The frequency is 
+$$ f=\frac{c}{\lambda}=\frac{2.99792458\cdot10^{8}}{5\cdot10^{-7}}=5.995849\cdot 10^{14} \,\text{Hz}.$$
+
+\item How many photons are emitted by the light source per second?\\
+
+ Photon energy $E_{ph}=hf$. The photon emission rate is $\frac{\Delta N}{\Delta t} = P/E_{ph}$:
+$$ E_{ph}=h f=3.972892\cdot  10^{-19}\text{J},\qquad \frac{\Delta N}{\Delta t}=\frac{50}{E_{ph}}=1.258529\cdot 10^{20} s^{-1}.$$
+\end{enumerate}
+
+\item  How many photons per second are emitted by a $ 5\,mW $ carbon dioxide laser if its wavelength is $ 10\,\mu m$?\\
+
+ Photon energy $E_{ph}=hc/\lambda$. With $P=5\cdot10^{-3}\ \mathrm{W}$, $$ E_{ph}=1.986446\cdot 10^{-20}\,\text{J},\qquad \frac{\Delta N}{\Delta t}=\frac{5\cdot10^{-3}}{E_{ph}}=2.517058\cdot 10^{17} s^{-1}.$$
+
+\item A laser pulse of energy $E=16\ \,\text{J}$ has a duration $\tau=4\cdot10^{-7}\ \,\text{s}$. The light, of wavelength $\lambda=600\ \,\text{nm}$, strikes a metal surface.
+
+\begin{enumerate}
+\item What is the power of the laser?\\
+
+ $$P=E/\tau=4.00\cdot 10^{7}\,\text{W}.$$
+
+\item How many photons strike the metal surface?\\
+
+ Photon energy $E_{\,\text{ph}}=hc/\lambda=3.310743\cdot 10^{-19}\,\text{J}$. Number of photons in the pulse $N=E/E_{\,\text{ph}}=4.832752\cdot 10^{19}.$\\
+
+\pagebreak
+\item  What is the maximum velocity of the electrons ejected from the metal by the light, if the work function is $ 4 \cdot 10^{-19} \,J$?     (Electron mass: $ m_{e} = 9.11 \cdot 10^{-31} \,kg$)\\
+
+ Maximum kinetic energy $E_{kin}^{\max}=E_{ph}-\phi=-6.892569\cdot 10^{-20}\,\text{J}$. %Thus  $$ v_{max}=\sqrt{\frac{2E_{kin}^{max}}{m_{e}}}=0 \,\text{m/s}.$$
+Therefore, no electrons are ejected from the metal by the light with these parameters. 
+\end{enumerate}
+
+\item What is the energy of a photon of X-ray radiation with a wavelength of $ 5\cdot10^{-11}\,m$,  in joules and in electronvolts?  What are the momentum and mass of the photon?\\
+
+$$E_{ph}=\frac{hc}{\lambda}=3.972892\cdot 10^{-15}\,\text{J}=2.479684\cdot 10^{4}\,\text{eV}, $$
+$$ p=\frac{E_{ph}}{c}=1.325214\cdot 10^{-23}\,\text{kg}\cdot\,\text{m/s},\qquad m_{eff}=\frac{E_{ph}}{c^{2}}=4.420438\cdot 10^{-32}\,\text{kg}. $$
+
+\item A metal surface is illuminated with light of wavelength $ \lambda_{1} = 492\,nm $.  The maximum kinetic energy of the emitted electrons is $ W_{kin1} = 9.9 \cdot 10^{-19} \,J$.  When the wavelength of the light is changed to $ \lambda_{2} = 579\,nm $, the kinetic energy decreases to $ W_{kin2} =3.8 \cdot 10^{-20} \,J$.  Based on these data, determine the Planck constant and the work function characteristic of the metal!\\
+
+ From $E_{kin}^{i} = \dfrac{hc}{\lambda_{i}}-\phi$ (for $i=1,2$) subtracting yields
+$$ h=\frac{E_{kin}^1-E_{kin}^2}{c\left(\dfrac{1}{\lambda_{1}}-\dfrac{1}{\lambda_{2}}\right)}=1.039778\cdot 10^{-32}\,\text{J}\cdot\,\text{s}. $$
+Then $\phi=\frac{hc}{\lambda_{1}}-E_{kin}^1=5.345724\cdot 10^{-18}\,\text{J}.$
+
+\item When light of a certain frequency is incident on a metal surface, the measured stopping potential of the emitted electrons is $ U_{f1} = 3.49\,V$.  For light of half that frequency, the stopping potential is $ U_{f2} = 0.75 \,V $.   Determine the work function and the wavelength of the light!\\
+
+ Using $eU_{s}=hf-\phi$ for frequency $f$ and $f/2$,
+subtracting gives $hf=2e(U_{s1}-U_{s2})$. Hence
+$$ f=\frac{2e(U_{s1}-U_{s2})}{h}=1.325058\cdot 10^{15}\,\text{Hz}, \qquad \lambda=\frac{c}{f}=2.262485\cdot 10^{-7}\,\text{m}. $$
+Work function: 
+$$ \phi=hf-eU_{s1}=3.188332\cdot 10^{-19}\,\text{J}=1.99\,\text{eV}. $$
+
+\end{enumerate}
+
+\bigskip
+
+\rightline{Dr.~Gabor~FACSKO}
+\rightline{\textit{facsko.gabor@uni-obuda.hu}}
+
+\vfill
+
+\end{document}
